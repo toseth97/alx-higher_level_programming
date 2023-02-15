@@ -1,3 +1,3 @@
---script to delete database
+-- deleting a database
 -- should not fail if database doesn't exist
-DROP IF EXISTS hbtn_0c_0
+DROP DATABASE IF EXISTS hbtn_0c_0
