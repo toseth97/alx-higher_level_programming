@@ -1,2 +1,2 @@
--- script to list the best where the name and score is only displayed
-SELECT name, score FROM second_table ORDER BY score DESC
+-- script lists all records of the table second_table
+SELECT score, name FROM second_table ORDER BY score DESC
