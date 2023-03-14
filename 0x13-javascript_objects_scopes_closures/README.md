@@ -83,4 +83,3 @@
   - In the new dictionary:
   - A key is a number of occurrences
   - A value is the list of user ids
-  - Print the new dictionary at the end
