@@ -1,89 +1,46 @@
-# Network 1
+# 0x11. Python - Network #1
+---
+## Description
 
-## Tools utilized: Python, Containers
+This Python project in the High Level Programming series is about:
+* request and response using Python
+* How to fetch internet resources with the Python package urllib
+* How to decode urllib body response
+* How to use the Python package requests #requestsiswaysimplerthanurllib
+* How to make HTTP GET request
+* How to make HTTP POST/PUT/etc. request
+* How to fetch JSON resources
+* How to manipulate data from an external service
 
-## Learnings from the project
-- How to fetch internet resources with the Python package urllib
-- How to decode urllib body response
-- How to use the Python package requests #requestsiswaysimplerthanurllib
-- How to make HTTP GET request
-- How to make HTTP POST/PUT/etc. request
-- How to fetch JSON resources
-- How to manipulate data from an external service
+## Files
+---
+File|Task
+---|---
+0-hbtn_status.py | fetches a URL
+1-hbtn_header.py | takes in a URL, sends request and displays a specific value
+2-post_email.py | takes in a URL and an email, sends a POST request
+3-error_code.py | takes in URL, sends request and display the body of response
+4-hbtn_status.py | fetches URL using requests package only
+5-hbtn_header.py | takes in a URL, sends a request and displays specific value using requests and sys package only
+7-error_code.py | takes in a URL, sends a request and display body of response with requests and sys package only
+8-json_api.py | takes in a letter and sends a POST request to URL with letter as a parameter and can only use requests and sys package only
+9-starwars.py | takes in a string and sends a search request to the Star Wars API
+10-my_github.py | takes my Github credentials and use the GITHUB API to display my id
+100-github_commits.py | technical challenge on connecting to GITHUB API and list 10 recent commits of inputted repo and user arguemtns
+101-starwars.py | script that takes in a string and sends a search request to the Star Wars API
+102-starwars.py | script that takes in a string and sends a search request to the Star Wars API
 
-## Tasks
-- Write a Python script that fetches https://intranet.hbtn.io/status
-  - You must use the package urllib
-  - You are not allowed to import any packages other than urllib
-  - The body of the response must be displayed like the following example (tabulation before -)
-  - You must use a with statement
+## Directories
+---
+Directory Name | Description
+---|---
+0x11-python-network_1 | Main folder of all my python scripts
 
-- Write a Python script that takes in a URL, sends a request to the URL and displays the value of the X-Request-Id variable found in the header of the response.
-  - You must use the packages urllib and sys
-  - You are not allow to import packages other than urllib and sys
-  - The value of this variable is different for each request
-  - You don’t need to check arguments passed to the script (number or type)
-  - You must use a with statement
+## More Info for Python programs
+* All Python files is PEP 8(version 1.7) formatted
+* All modules, classes and functions(inside and outside a class) have documentations
+* Python Scripts - first line of every file is exactly be exactly #!/usr/bin/python3 and executable
+* Code will not be executed when imported
 
-- Write a Python script that takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in utf-8)
-  - The email must be sent in the email variable
-  - You must use the packages urllib and sys
-  - You are not allowed to import packages other than urllib and sys
-  - You don’t need to check arguments passed to the script (number or type)
-  - You must use the with statement
-  - Please test your script in the container provided, using the web server running on port 5000
-
-- Write a Python script that fetches https://intranet.hbtn.io/status
-  - You must use the package requests
-  - You are not allow to import packages other than requests
-  - The body of the response must be display like the following example (tabulation before -)
-
-- Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable X-Request-Id in the response header
-  - You must use the packages requests and sys
-  - You are not allow to import other packages than requests and sys
-  - The value of this variable is different for each request
-  - You don’t need to check script arguments (number and type)
-
-- Write a Python script that takes in a URL and an email address, sends a POST request to the passed URL with the email as a parameter, and finally displays the body of the response.
-  - The email must be sent in the variable email
-  - You must use the packages requests and sys
-  - You are not allowed to import packages other than requests and sys
-  - You don’t need to error check arguments passed to the script (number or type)
-  - Please test your script in the container provided, using the web server running on port 5000
-
-- Write a Python script that takes in a URL, sends a request to the URL and displays the body of the response.
-  - If the HTTP status code is greater than or equal to 400, print: Error code: followed by the value of the HTTP status code
-  - You must use the packages requests and sys
-  - You are not allowed to import packages other than requests and sys
-  - You don’t need to check arguments passed to the script (number or type)
-  - Please test your script in the container provided, using the web server running on port 5000
-
-- Write a Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
-  - The letter must be sent in the variable q
-  - If no argument is given, set q=""
-  - If the response body is properly JSON formatted and not empty, display the id and name like this: [<id>] <name>
-  - Otherwise:
-    - Display Not a valid JSON is the JSON is invalid
-    - Display No result is the JSON is empty
-  - You must use the package requests and sys
-  - You are not allowed to import packages other than requests and sys
-  - Please test your script in the container provided, using the web server running on port 5000. All JSON generated by this server are random.
-
-- Write a Python script that takes in a string and sends a search request to the Star Wars API
-  - Use the Star Wars API search people endpoint
-  - Use the string argument as the search value of the request
-  - The body response must be JSON and converted to a Python dictionary.
-  - Display: Number of results: <count>
-  - Display the name of each result (see example below)
-  - You must use the packages requests and sys
-  - You are not allowed to import packages other than requests and sys
-  - You don’t need to check arguments passed to the script (number or type)
-  - You don’t need to manage the pagination
-
-- Write a Python script that takes your Github credentials (username and password) and uses the Github API to display your id
-  - You must use Basic Authentication to access to your information
-  - The first argument will be your username
-  - The second argument will be your password
-  - You must use the package requests and sys
-  - You are not allowed to import packages other than requests and sys
-  - You don’t need to check arguments passed to the script (number or type)
+## Author
+Heindrick Cheung
