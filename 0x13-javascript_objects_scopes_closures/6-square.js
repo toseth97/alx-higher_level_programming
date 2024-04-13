@@ -1,12 +1,23 @@
-const Square2 = require('./5-square');
-module.exports = class Square extends Square2 {
+#!/usr/bin/node
+/**
+ * Square class that inherits from previous square class
+ */
+const PrevSquare = require('./5-square');
+
+class Square extends PrevSquare {
   charPrint (c) {
-    if (c === undefined) {
-      this.print();
-    } else {
-      for (let i = 0; i < this.width; i++) {
-        console.log(c.repeat(this.height));
+    const myChar = c === undefined ? 'X' : c;
+    for (let i = 0; i < this.height; i++) {
+      let myVar = '';
+      let y = 0;
+      while (y < this.width) {
+        myVar += myChar;
+        y++;
       }
+
+      console.log(myVar);
     }
   }
-};
+}
+
+module.exports = Square;

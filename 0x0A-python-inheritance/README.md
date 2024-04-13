@@ -1,1 +1,1 @@
-Read me file:`
+# Solution to tasks on Python - Inheritance

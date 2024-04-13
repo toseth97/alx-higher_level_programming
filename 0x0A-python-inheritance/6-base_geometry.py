@@ -1,17 +1,10 @@
 #!/usr/bin/python3
-"""
-This module contains a class
-with public instance and Raises
-exception when required
-"""
+"""Defines a base geometry class BaseGeometry."""
 
 
 class BaseGeometry:
-    """
-    class Base has public instance
-    """
+    """this class represents a base geometry"""
+
     def area(self):
-        """
-        function that raises exception
-        """
+        """method not implemented yet"""
         raise Exception("area() is not implemented")
